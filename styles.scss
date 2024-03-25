@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parisienne&display=swap');
 $azul-oscuro: #0A2844;
 $verde-azulado: #33738F;
 $beige-claro: #D7D7C8;
@@ -11,7 +13,25 @@ $rojo-oscuro: #663333;
 
 //color 
 $primary: #705747;
-$secondary: #F5B87F;   
-$success: #89A67D;
+$secondary: #f5b87f;   
+$success: #89a67d;
+
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success
+);
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Parisienne", cursive;
+}
+
+p{
+    font-family: "Nunito", sans-serif; 
+}
+  
+a{
+    font-family: "Nunito", sans-serif; 
+}
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+

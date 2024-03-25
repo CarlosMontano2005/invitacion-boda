@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parisienne&display=swap');
+/* font-family: "Parisienne", cursive; */
+/* font-family: "Nunito", sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+/* scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(112, 87, 71, 0.438); /* ajustando el color al tono de #705747 */
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(112, 87, 71, 0.7); /* ajustando el color al tono de #705747 */
+    border-radius: 30px;
+}
+
+
+/* Baner */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(245, 184, 127, 0.30), rgba(245, 184, 127, 0.50)), url(../resorses/img/boda-atardecer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.title-banner h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+header .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:url(../resorses/img/wave.png);
+    background-size: 1000px 100px;    
+}
+
+header .wave.wave-1{
+    animation: animate-wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+header .wave.wave-2{
+    animation: animate-wave-2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+header .wave.wave-3{
+    animation: animate-wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+header .wave.wave-4{
+    animation: animate-wave 15s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate-wave {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+    
+}
+@keyframes animate-wave-2 {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+    
+}
