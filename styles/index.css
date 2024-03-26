@@ -146,3 +146,63 @@ width: 300px;
 height: 300px;
 padding: 0;
 }
+/* no niños contenedor */
+
+/* no niños  */
+
+/* Estilos para la sección */
+.no-children {
+    display: flex;
+    flex-direction: row; /* Por defecto, la imagen y el texto están uno al lado del otro */
+}
+
+/* Estilos para la imagen */
+.img-no-children {
+    width: 50%; /* Ocupa el 50% del ancho del contenedor */
+    background-image: linear-gradient(rgba(41, 41, 41, 0.30), rgba(41, 41, 41, 0.50)), url(../resorses/img/fista-boda.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para el contenedor de texto */
+.no-children-container {
+    width: 50%; /* Ocupa el 50% del ancho del contenedor */
+}
+
+
+
+.no-children .no-children-container{
+    background: #292929;
+}
+.no-children-container .no-children-container-text img{
+    width: 100%;
+    height: 50px;
+}
+
+/* Estilos para pantallas pequeñas */
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Cambiar la dirección del flexbox para dispositivos móviles */
+    .no-children {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    /* Asegurar que la imagen ocupe todo el ancho */
+    .img-no-children {
+        width: 100%;
+        height: 40vh;
+    }
+
+    /* Asegurar que el contenedor de texto ocupe todo el ancho */
+    .no-children-container {
+        width: 100vw;
+        width: 100%;
+        height: 45vh;
+    }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+   
+}
