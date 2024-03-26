@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>invitación de boda</title>
+    <!-- icono  -->
+    <link rel="icon" href="./resorses/img/flore-acuarela.png" type="image/png">
     <!-- estilos .css del index principal-->
     <link rel="stylesheet" href="./styles/index.css">
     <!-- vinculo de boostrap 5 -->
@@ -15,7 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
+<body class="">
     <!-- desarrollo de la pagina -->
     <!-- header de la pagina -->
     <header>
@@ -36,15 +38,25 @@
 
     <!-- seccion del lugar de la seremonia -->
     <section class="lugar-horario d-flex align-items-center position-relative">
-        <div class="position-absolute top-50 start-0 translate-middle ">
-            <img src="./resorses/img/flor-lineal-cafe.png" class="img-flor-linea" alt="flor-lineal-cafe">
-        </div>
-
-        <!-- <div class="position-absolute top-50 start-100 translate-middle ">
-            <img src="./resorses/img/flor-lineal-cafe.png" class="img-flor-linea" alt="flor-lineal-cafe">
-        </div> -->
-
+        <audio autoplay loop volume="0.5" balance="0" class="invisible" id="audio">
+            <!-- Formato MP3 -->
+            <source src="./resorses/audio/Amore_Mio_Aiutami_(Main_Theme).mp3" type="audio/mpeg">
+            <!-- Formato Ogg Vorbis -->
+            <source src="./resorses/audio/Amore_Mio_Aiutami_(Main_Theme).ogg" type="audio/ogg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        <!-- Botón flotante para controlar el volumen del audio -->
+        <button class="btn btn-primary floating-btn" id="volumeButton" onclick="toggleMute()">
+            <i class="bi bi-volume-up"></i> Silenciar
+        </button>
         <div class="container d-flex flex-column align-items-center gap-5">
+
+            <div class="position-absolute top-50 start-0 translate-middle ">
+                <img src="./resorses/img/flore-acuarela.png" class="img-flor-linea" alt="flore-acuarela">
+            </div>
+            <div class="position-absolute top-100 start-100 translate-middle ">
+                <img src="./resorses/img/flor-lineal-cafe.png" class="img-flor-linea" alt="flor-lineal-cafe">
+            </div>
             <div class="cont-horario d-flex col-12 justify-content-evenly">
                 <div>
                     <h3 class="display-3">SEPT</h3>
@@ -60,7 +72,7 @@
                 <span class="material-symbols-outlined">
                     church
                 </span>
-                <h1 class="text-secondary">
+                <h1 class="display-5 text-secondary">
                     Iglesia de los Cristos
                 </h1>
             </div>
@@ -90,7 +102,7 @@
                     local_bar
                 </span>
                 <!-- <img src="./resorses/img/salud.png" alt="brindis de salud"> -->
-                <h1 class="text-secondary">
+                <h1 class="display-5 text-secondary">
                     Brindis de boda
                 </h1>
             </div>
@@ -105,7 +117,8 @@
     <!-- no niños -->
     <section class="no-children d-flex flex-lg-row flex-md-row flex-sm-column">
         <div class="col-md-6 col-sm-12 img-no-children"></div>
-        <div class="col-md-6 col-sm-12 no-children-container  d-flex flex-column align-items-center justify-content-evenly text-center text-white">
+        <div
+            class="col-md-6 col-sm-12 no-children-container  d-flex flex-column align-items-center justify-content-evenly text-center text-white">
             <div class="no-children-container-text">
                 <h1 class="display-1 ">Invitación</h1>
                 <h3>FORMAL</h3>
@@ -117,12 +130,112 @@
             </div>
         </div>
     </section>
-    <footer>
+    <!-- Mesa de regalo -->
+    <section class="sobre-regalo d-flex align-items-center position-relative">
 
+
+        <div class="container d-flex flex-column align-items-center gap-5">
+            <div class="position-absolute top-50 start-100 translate-middle ">
+                <img src="./resorses/img/flore-acuarela.png" class="img-flor-linea" alt="flor flore-acuarela">
+            </div>
+            <div class="d-flex flex-column align-items-center text-center col-10">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempore officia cvitae illo
+                    sapiente, vel nobis itaque laudantium</p>
+            </div>
+            <div class="cont-icon d-flex flex-column align-items-center">
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+                <!-- <img src="./resorses/img/salud.png" alt="brindis de salud"> -->
+                <h1 class="display-5 text-secondary">
+                    Sobre de Regalo
+                </h1>
+            </div>
+            <div class="d-flex flex-column align-items-center text-center col-10">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint deserunt dolor fugiat. Quis non
+                    sapiente in voluptatum quas iusto? Saepe, aspernatur harum asperiores accusantium provident ut porro
+                    dolor assumenda quo.</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- lugar de puesto o cupo no se que se pone aqui -->
+    <section class="puesto d-flex align-items-center position-relative">
+        <div class="position-absolute top-0 start-0 translate-middle ">
+            <img src="./resorses/img/hojas-cafes-larga.png" class="img-flor-linea" alt="flor-lineal-cafe">
+        </div>
+
+        <div class="container-puesto-text container d-flex flex-column align-items-center gap-5">
+            <div class="d-flex flex-column align-items-center">
+                <!-- <img src="./resorses/img/salud.png" alt="brindis de salud"> -->
+                <h1 class="display-4 text-secondary">
+                    Lugar en tu honor
+                </h1>
+                <div class="puesto-h3">
+                    <h3 class="display-3">03</h3>
+                </div>
+                <div>
+                    <h4 class="text-primary"> Lorem, ipsum dolor.</h4>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center text-center col-10">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempore officia vitae illo
+                    sapiente, vel nobis itaque laudantium facilis</p>
+                <button type="button" class="btn btn-primary rounded-pill">CONFIRMAR IDA</button>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class=" cont-icon-footer me-5 d-none d-lg-block">
+                <span class="material-symbols-outlined">
+                    favorite
+                </span>
+            </div>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-12 col-lg-13 col-xl-12 mb-4">
+                        <!-- Content -->
+                        <div class="d-lg-none d-xl-none cont-icon-footer">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        </div>
+                        <h1>"Con amor eterno te he amado, por eso te sigo con fidelidad” - <cite>Jeremías 31:3</cite>
+                        </h1>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 container-copyright">
+            © <span id="año_actual"></span> Copyright:Carlos Roberto Montano
+            <a class="text-reset fw-bold" href="https://portafoliocarlosmontano.netlify.app/" target="_blank">|
+                Portafolio</a>
+        </div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
 
     <!-- link de boostrap 5 minificado -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- scrip funciones -->
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
