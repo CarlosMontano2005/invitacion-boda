@@ -98,7 +98,7 @@ header .wave.wave-4{
 
 /* lugar  */
 body {
-    overflow-x: hidden; /* Esto oculta la barra de desplazamiento horizontal */
+    /* overflow-x: hidden; Esto oculta la barra de desplazamiento horizontal */
 }
 
 /* Opcionalmente, puedes agregar esto para evitar el desplazamiento horizontal en elementos específicos */
@@ -106,10 +106,7 @@ body {
 
 section{
     height: 100vh;
-    width: 100vw;
-}
-.cont-icon-footer{
-
+    /* width: 100vw; */
 }
 .cont-icon span{
     font-size: 128px;
@@ -143,12 +140,30 @@ section{
     left: 0;
     bottom: 0;
 }
+.img-flor-linea {
+    width: 300px; /* Ancho del div */
+    height: 300px; /* Altura del div */
+    /* border: 1px solid black; Borde para visualización */
+    overflow: hidden; /* Ocultar cualquier parte de la imagen que exceda las dimensiones del div */
+}
 
-.img-flor-linea{
+.img-flor-linea img {
+    max-width: 100%; /* Ajustar la imagen al ancho máximo del div */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegurarse de que la imagen se muestre como un bloque */
+    margin: auto; /* Centrar la imagen horizontalmente dentro del div */
+}
+/* .img-flor-linea{
 width: 300px;
 height: 300px;
-padding: 0;
-}
+overflow: hidden;
+} */
+/* .img-flor-linea{
+   width: 300px;
+   height: 300px;
+   z-index: 100;
+   
+} */
 /* no niños contenedor */
 
 /* no niños  */

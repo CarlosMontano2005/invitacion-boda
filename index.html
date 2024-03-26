@@ -19,6 +19,7 @@
 
 <body class="">
     <!-- header de la pagina -->
+    
     <header>
         <div class="banner d-flex justify-content-center align-items-center text-center ">
             <div class="title-banner">
@@ -36,26 +37,12 @@
     </header>
 
     <!-- seccion del lugar de la seremonia -->
-    <section class="lugar-horario d-flex align-items-center position-relative">
-        <audio autoplay loop volume="0.5" balance="0" class="invisible" id="audio">
-            <!-- Formato MP3 -->
-            <source src="./resorses/audio/Amore_Mio_Aiutami_(Main_Theme).mp3" type="audio/mpeg">
-            <!-- Formato Ogg Vorbis -->
-            <source src="./resorses/audio/Amore_Mio_Aiutami_(Main_Theme).ogg" type="audio/ogg">
-            Tu navegador no soporta la reproducción de audio.
-        </audio>
-        <!-- Botón flotante para controlar el volumen del audio -->
-        <button class="btn btn-primary floating-btn" id="volumeButton" onclick="toggleMute()">
-            <i class="bi bi-volume-up"></i> Silenciar
-        </button>
+    <section class="lugar-horario d-flex align-items-center position-relative overflow-hidden">
+        <div class="img-flor-linea position-absolute top-50 start-0 translate-middle">
+            <img src="./resorses/img/flor-lineal-cafe.png"  alt="flore-acuarela">
+        </div>
         <div class="container d-flex flex-column align-items-center gap-5">
-
-            <div class="position-absolute top-50 start-0 translate-middle ">
-                <img src="./resorses/img/flore-acuarela.png" class="img-flor-linea" alt="flore-acuarela">
-            </div>
-            <div class="position-absolute top-100 start-100 translate-middle ">
-                <img src="./resorses/img/flor-lineal-cafe.png" class="img-flor-linea" alt="flor-lineal-cafe">
-            </div>
+           
             <div class="cont-horario d-flex col-12 justify-content-evenly">
                 <div>
                     <h3 class="display-3">SEPT</h3>
@@ -86,11 +73,10 @@
     </section>
 
     <!-- despus seremonia -->
-    <section class="brindis d-flex align-items-center position-relative">
-        <div class="position-absolute top-50 start-0 translate-middle ">
-            <img src="./resorses/img/hojas-cafes-larga.png" class="img-flor-linea" alt="flor-lineal-cafe">
+    <section class="brindis d-flex align-items-center position-relative overflow-hidden">
+        <div class="img-flor-linea position-absolute top-50 start-100 translate-middle " >
+            <img src="./resorses/img/flore-acuarela.png" alt="flor-lineal-cafe">
         </div>
-
         <div class="container d-flex flex-column align-items-center gap-5">
             <div class="d-flex flex-column align-items-center text-center col-10">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempore officia cvitae illo
@@ -130,13 +116,11 @@
         </div>
     </section>
     <!-- Mesa de regalo -->
-    <section class="sobre-regalo d-flex align-items-center position-relative">
-
-
+    <section class="sobre-regalo d-flex align-items-center position-relative overflow-hidden">
+        <!-- la unica imagen que no esta en un contenedor -->
+            <img class="img-flor-linea position-absolute top-50 start-0 translate-middle" src="./resorses/img/hojas-cafes-larga.png"  alt="flore-acuarela">
         <div class="container d-flex flex-column align-items-center gap-5">
-            <div class="position-absolute top-50 start-100 translate-middle ">
-                <img src="./resorses/img/flore-acuarela.png" class="img-flor-linea" alt="flor flore-acuarela">
-            </div>
+           
             <div class="d-flex flex-column align-items-center text-center col-10">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempore officia cvitae illo
                     sapiente, vel nobis itaque laudantium</p>
@@ -159,11 +143,11 @@
 
     </section>
     <!-- lugar de puesto o cupo no se que se pone aqui -->
-    <section class="puesto d-flex align-items-center position-relative">
-        <div class="position-absolute top-0 start-0 translate-middle ">
-            <img src="./resorses/img/hojas-cafes-larga.png" class="img-flor-linea" alt="flor-lineal-cafe">
+    <section class="puesto d-flex align-items-center position-relative overflow-hidden">
+        <div class="img-flor-linea position-absolute top-50 start-100 translate-middle " >
+            <img src="./resorses/img/flor-lineal-cafe.png" alt="flor-lineal-cafe">
         </div>
-
+  
         <div class="container-puesto-text container d-flex flex-column align-items-center gap-5">
             <div class="d-flex flex-column align-items-center">
                 <!-- <img src="./resorses/img/salud.png" alt="brindis de salud"> -->
@@ -185,6 +169,17 @@
         </div>
 
     </section>
+    <audio autoplay loop volume="0.5" balance="0" class="invisible" id="audio">
+        <!-- Formato MP3 -->
+        <source src="./resorses/audio/Amore_Mio_Aiutami_(Main_Theme).mp3" type="audio/mpeg">
+        <!-- Formato Ogg Vorbis -->
+        <source src="./resorses/audio/Amore_Mio_Aiutami_(Main_Theme).ogg" type="audio/ogg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <!-- Botón flotante para controlar el volumen del audio -->
+    <button class="btn btn-primary floating-btn" id="volumeButton" onclick="toggleMute()">
+        <i class="bi bi-volume-up"></i> Silenciar
+    </button>
     <!-- Footer -->
     <footer class="text-center text-lg-start text-muted">
         <!-- Section: Social media -->
@@ -230,7 +225,7 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-
+    <script src="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"></script>
     <!-- link de boostrap 5 minificado -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- scrip funciones -->
