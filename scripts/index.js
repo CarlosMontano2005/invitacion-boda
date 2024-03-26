@@ -1,5 +1,6 @@
 const ID_AÑO_ACTUAL = document.getElementById('año_actual');
-
+// Crear una instancia del objeto Date para obtener la fecha y hora actuales
+const fechaActual = new Date();
 // Obtener el año
 const año = fechaActual.getFullYear();
 document.addEventListener("DOMContentLoaded", async () => {
