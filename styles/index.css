@@ -21,7 +21,11 @@
     border-radius: 30px;
 }
 
-
+:root {
+    --primary: #7F5C2F;
+    --secondary: #f5b87f;   
+    --success: #89a67d;
+}
 /* Baner */
 .banner {
     width: 100%;
@@ -90,4 +94,55 @@ header .wave.wave-4{
         background-position-x: -1000px;
     }
     
+}
+
+/* lugar  */
+body {
+    overflow-x: hidden; /* Esto oculta la barra de desplazamiento horizontal */
+}
+
+/* Opcionalmente, puedes agregar esto para evitar el desplazamiento horizontal en elementos específicos */
+
+
+section{
+    height: 100vh;
+    width: 100vw;
+}
+.cont-icon span{
+    font-size: 128px;
+    color: var(--secondary);
+    font-weight: 10px;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 100,
+    'GRAD' -25,
+    'opsz' 20
+}
+.lugar-horario .container .cont-horario div h3{
+    position: relative;
+    color: var(--primary);
+
+}
+.lugar-horario .container .cont-horario div h3::after{
+    content: "";
+    position: absolute;
+    background-color: var(--primary);
+    height: 3px;
+    width: 100%;
+    left: 0;
+}
+.lugar-horario .container .cont-horario div h3::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary);
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.img-flor-linea{
+width: 300px;
+height: 300px;
+padding: 0;
 }

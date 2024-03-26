@@ -12,7 +12,7 @@ $naranja-claro: #F5B87F;
 $rojo-oscuro: #663333;
 
 //color 
-$primary: #705747;
+$primary: #7F5C2F;
 $secondary: #f5b87f;   
 $success: #89a67d;
 
@@ -21,12 +21,20 @@ $theme-colors: (
     "secondary":  $secondary,
     "success":    $success
 );
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     font-family: "Parisienne", cursive;
 }
+h3, h4, h5, h6{
+    font-family: "Nunito", sans-serif; 
+    text-transform: uppercase;
+    color: $primary;
 
+}
 p{
     font-family: "Nunito", sans-serif; 
+    text-transform: uppercase;
+    color: $primary;
+    // font-weight: lighter;
 }
   
 a{
@@ -34,4 +42,4 @@ a{
 }
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
-
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
