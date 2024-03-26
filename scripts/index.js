@@ -5,7 +5,6 @@ const fechaActual = new Date();
 const año = fechaActual.getFullYear();
 document.addEventListener("DOMContentLoaded", async () => {
     ID_AÑO_ACTUAL.textContent = año;
-    toggleMute();
 })
 // Función para silenciar o restaurar el volumen del audio
 function toggleMute() {
