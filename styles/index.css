@@ -33,7 +33,7 @@ header {
 .banner {
     width: 100%;
     height: 95%;
-    background-image: linear-gradient(rgba(245, 184, 127, 0.30), rgba(245, 184, 127, 0.50)), url(../resorses/img/boda-atardecer.jpg);
+    background-image: linear-gradient(rgba(245, 184, 127, 0.30), rgba(245, 184, 127, 0.50)), url(../resorses/img/boda-atardecer.webp);
     background-size: cover;
     background-position: center;
 }
@@ -184,7 +184,7 @@ overflow: hidden;
 /* Estilos para la imagen */
 .img-no-children {
     width: 50%; /* Ocupa el 50% del ancho del contenedor */
-    background-image: linear-gradient(rgba(41, 41, 41, 0.30), rgba(41, 41, 41, 0.50)), url(../resorses/img/fista-boda.jpg);
+    background-image: linear-gradient(rgba(41, 41, 41, 0.30), rgba(41, 41, 41, 0.50)), url(../resorses/img/fista-boda.webp);
     background-size: cover;
     background-position: center;
 }
