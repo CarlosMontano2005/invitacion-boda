@@ -50,7 +50,7 @@ header .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background:url(../resorses/img/wave.png);
+    background:url(../resorses/img/wave.webp);
     background-size: 1000px 100px;    
 }
 
