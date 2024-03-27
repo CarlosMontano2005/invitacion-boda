@@ -18,6 +18,13 @@
 
         <!-- link icono bosttrap 5-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <audio autoplay loop volume="0.5" balance="0" class="invisible" id="audio">
+            <!-- Formato MP3 -->
+            <source src="./resorses/audio/Amore_Mio_Aiutami_(Main_Theme).mp3" type="audio/mpeg">
+            <!-- Formato Ogg Vorbis -->
+            <source src="./resorses/audio/Amore_Mio_Aiutami_(Main_Theme).ogg" type="audio/ogg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
 </head>
 
 <body class="">
@@ -172,13 +179,6 @@
         </div>
 
     </section>
-    <audio autoplay loop volume="0.5" balance="0" class="invisible" id="audio">
-        <!-- Formato MP3 -->
-        <source src="./resorses/audio/Amore_Mio_Aiutami_(Main_Theme).mp3" type="audio/mpeg">
-        <!-- Formato Ogg Vorbis -->
-        <source src="./resorses/audio/Amore_Mio_Aiutami_(Main_Theme).ogg" type="audio/ogg">
-        Tu navegador no soporta la reproducción de audio.
-    </audio>
     <!-- Botón flotante para controlar el volumen del audio -->
     <button class="btn btn-primary floating-btn" id="volumeButton" onclick="toggleMute()">
         <i class="bi bi-volume-up"></i> Silenciar
