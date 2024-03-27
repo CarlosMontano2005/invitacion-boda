@@ -27,9 +27,12 @@
     --success: #89a67d;
 }
 /* Baner */
+header {
+    height: 100vh;
+}
 .banner {
     width: 100%;
-    height: 100vh;
+    height: 95%;
     background-image: linear-gradient(rgba(245, 184, 127, 0.30), rgba(245, 184, 127, 0.50)), url(../resorses/img/boda-atardecer.jpg);
     background-size: cover;
     background-position: center;
@@ -38,7 +41,9 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
-
+header .container-wave{
+    bottom: 0;
+}
 header .wave{
     position: absolute;
     bottom: 0;
