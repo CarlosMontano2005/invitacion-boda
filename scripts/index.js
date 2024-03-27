@@ -11,25 +11,22 @@ document.addEventListener("DOMContentLoaded", async () => {
     toggleMute();
 
     var audio = document.getElementById("audio");
+    var playPromise = audio.play();
 
-    // Agregar un controlador de eventos para esperar la interacción del usuario
-    document.addEventListener('click', function () {
-        // Intentar iniciar la reproducción del audio
-        var playPromise = audio.play();
+    if (playPromise !== undefined) {
+        playPromise.then(function() {
+            // La reproducción ha comenzado con éxito
+            console.log("Reproducción iniciada.");
+            // Ocultar el botón de reproducción si la reproducción automática tiene éxito
+            hidePlayButton();
+        }).catch(function(error) {
+            // Ocurrió un error al iniciar la reproducción
+            console.log("Error al iniciar la reproducción:", error);
 
-        // Manejar el resultado de la promesa
-        if (playPromise !== undefined) {
-            playPromise.then(function () {
-                // La reproducción ha comenzado con éxito
-                console.log("Reproducción iniciada.");
-                // Ocultar el botón de reproducción si la reproducción automática tiene éxito
-                hidePlayButton();
-            }).catch(function (error) {
-                // Ocurrió un error al iniciar la reproducción
-                console.log("Error al iniciar la reproducción:", error);
-            });
-        }
-    });
+            // Mostrar un botón de reproducción y permitir que el usuario inicie la reproducción manualmente
+            showPlayButton();
+        });
+    }
 });
 
 // Función para silenciar o restaurar el volumen del audio
@@ -45,10 +42,18 @@ function toggleMute() {
     }
 }
 
+// Función para mostrar el botón de reproducción
+function showPlayButton() {
+    var playButton = document.getElementById("playButton");
+    if (playButton) {
+        playButton.style.display = 'block';
+    }
+}
+
 // Función para ocultar el botón de reproducción
 function hidePlayButton() {
-    var volumeButton = document.getElementById("volumeButton");
-    if (volumeButton) {
-        volumeButton.style.display = 'none';
+    var playButton = document.getElementById("playButton");
+    if (playButton) {
+        playButton.style.display = 'none';
     }
 }
