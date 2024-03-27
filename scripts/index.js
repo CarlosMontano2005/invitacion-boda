@@ -9,12 +9,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 // Función para silenciar o restaurar el volumen del audio
 function toggleMute() {
     var audio = document.getElementById("audio");
-    if (audio.volume === 0) {
-        audio.volume = 0.5; // Establecer el volumen al valor original (0.5)
-        volumeButton.innerHTML = '<i class="bi bi-volume-up"></i> Silenciar';
+    var volumeButton = document.getElementById("volumeButton");
+    
+    if (audio.paused) {
+        audio.play(); // Reproducir el audio
+        volumeButton.innerHTML = '<i class="bi bi-pause"></i> Pausar';
     } else {
-        audio.volume = 0; // Silenciar el audio
-        volumeButton.innerHTML = '<i class="bi bi-volume-mute"></i> Restaurar';
+        audio.pause(); // Pausar el audio
+        volumeButton.innerHTML = '<i class="bi bi-play"></i> Reproducir';
     }
 }
 
