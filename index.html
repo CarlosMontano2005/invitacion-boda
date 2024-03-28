@@ -28,7 +28,7 @@
     </audio>
 </head>
 
-<body class="">
+<body class="bg-body-tertiary">
     <!-- header de la pagina -->
 
     <header>
@@ -39,11 +39,43 @@
             </div>
 
         </div>
-        <div class="container-wave bottom-0">
-            <div class="wave wave-1"></div>
-            <div class="wave wave-2"></div>
-            <div class="wave wave-3"></div>
-            <div class="wave wave-4"></div>
+        <div class="w-100 container-wave bottom-0 position-absolute">
+            <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(252, 236, 216,0.7)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(252, 236, 216,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(252, 236, 216,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(252, 236, 216)" />
+            </g>
+          </svg>
         </div>
     </header>
 
@@ -59,7 +91,7 @@
                     <h3 class="display-3">SEPT</h3>
                 </div>
                 <div>
-                    <h1 class="display-1 text-primary">21</h1>
+                    <h1 class="display-1 text-secondary">21</h1>
                 </div>
                 <div>
                     <h3 class="display-3">2024</h3>
@@ -69,7 +101,7 @@
                 <span class="material-symbols-outlined">
                     church
                 </span>
-                <h1 class="display-5 text-secondary">
+                <h1 class="display-5 text-primary">
                     Iglesia de los Cristos
                 </h1>
             </div>
@@ -98,7 +130,7 @@
                     local_bar
                 </span>
                 <!-- <img src="./resorses/img/salud.webp" alt="brindis de salud"> -->
-                <h1 class="display-5 text-secondary">
+                <h1 class="display-5 text-primary">
                     Brindis de boda
                 </h1>
             </div>
@@ -142,7 +174,7 @@
                     mail
                 </span>
                 <!-- <img src="./resorses/img/salud.webp" alt="brindis de salud"> -->
-                <h1 class="display-5 text-secondary">
+                <h1 class="display-5 text-primary">
                     Sobre de Regalo
                 </h1>
             </div>
@@ -163,14 +195,14 @@
         <div class="container-puesto-text container d-flex flex-column align-items-center gap-5">
             <div class="d-flex flex-column align-items-center">
                 <!-- <img src="./resorses/img/salud.webp" alt="brindis de salud"> -->
-                <h1 class="display-4 text-secondary">
+                <h1 class="display-4 text-primary">
                     Lugar en tu honor
                 </h1>
                 <div class="puesto-h3">
                     <h3 class="display-3">03</h3>
                 </div>
                 <div>
-                    <h4 class="text-primary"> Lorem, ipsum dolor.</h4>
+                    <h4 class="text-secondary"> Lorem, ipsum dolor.</h4>
                 </div>
             </div>
             <div class="d-flex flex-column align-items-center text-center col-10">

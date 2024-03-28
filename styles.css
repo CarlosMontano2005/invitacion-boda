@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parisienne&display=swap");
 @import "./node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+.bg-body-secondary {
+  background-color: #E3C7C3;
+}
+
 h1, .h1, h2, .h2 {
   font-family: "Parisienne", cursive;
 }
@@ -103,7 +107,7 @@ a {
   --bs-tertiary-color: rgba(33, 37, 41, 0.5);
   --bs-tertiary-color-rgb: 33, 37, 41;
   --bs-tertiary-bg: #f8f9fa;
-  --bs-tertiary-bg-rgb: 248, 249, 250;
+  --bs-tertiary-bg-rgb:252, 236, 216; /* MODIFICADO ORIGINAL: --bs-tertiary-bg-rgb: 248, 249, 250; */
   --bs-heading-color: inherit;
   --bs-link-color: #71212C;
   --bs-link-color-rgb: 113, 33, 44;

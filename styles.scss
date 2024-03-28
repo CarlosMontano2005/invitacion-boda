@@ -22,20 +22,25 @@ $azul-oscuro: #000066;
 $azul-claro: #0000FF;
 $morado-oscuro: #660066;
 $morado-claro: #FF00FF;
-$rosado-palido: #E3C7C3;
 $rojo-claro: #A96E66;
 $rojo-oscuro: #71212C;
 $verde-oscuro: #717E6D;
 
 //color 
+// $rosado-palido: rgb(227, 199, 195);
+$rosado-palido: #E3C7C3;
 $primary: #71212C;
 $secondary: #A96E66;   
 $success: #717E6D;
 $theme-colors: (
     "primary":    $primary,
     "secondary":  $secondary,
-    "success":    $success
+    "success":    $success,
 );
+
+.bg-body-secondary {
+    background-color: $rosado-palido;
+  }
 h1, h2 {
     font-family: "Parisienne", cursive;
 }
