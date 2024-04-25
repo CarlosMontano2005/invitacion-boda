@@ -29,13 +29,13 @@
     --success: #717E6D;
 }
 /* Baner */
-header {
+/* header {
     height: 100vh;
-}
+} */
 .banner {
     width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(227, 199, 195, 0.30), rgba(227, 199, 195, 0.50)), linear-gradient(rgba(113, 33, 44, 0.30), rgba(113, 33, 44, 0.50)), url(../resorses/img/boda-atardecer.webp);
+    height: 100vh;
+    background-image: linear-gradient(rgba(227, 199, 195, 0.30), rgba(227, 199, 195, 0.50)), linear-gradient(rgba(113, 33, 44, 0.30), rgba(113, 33, 44, 0.20)), url(../resorses/img/boda-atardecer.webp);
     background-size: cover;
     background-position: center;
 }
