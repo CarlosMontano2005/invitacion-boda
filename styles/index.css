@@ -5,6 +5,7 @@
 *{
     padding: 0;
     margin: 0;
+
 }
 /* scroll */
 ::-webkit-scrollbar {
@@ -154,6 +155,7 @@ header .wave.wave-4{
 
 /* lugar  */
 body {
+    overflow-x: hidden;
     /* overflow-x: hidden; Esto oculta la barra de desplazamiento horizontal */
 }
 
