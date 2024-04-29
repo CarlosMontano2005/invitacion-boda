@@ -341,7 +341,7 @@ footer{
     }
     .banner {
         height: 95vh;
-        background-image: linear-gradient(rgba(227, 199, 195, 0.30), rgba(227, 199, 195, 0.50)), linear-gradient(rgba(113, 33, 44, 0.30), rgba(113, 33, 44, 0.50)), url(../resorses/img/ulisses-mariana.jpg);
+        background-image: linear-gradient(rgba(227, 199, 195, 0.30), rgba(227, 199, 195, 0.50)), linear-gradient(rgba(113, 33, 44, 0.30), rgba(113, 33, 44, 0.50)), url(../resorses/img/mariana-ulises.jpg);
 
     }
 }
